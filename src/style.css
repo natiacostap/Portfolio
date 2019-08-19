@@ -32,8 +32,10 @@ h4,h6{
     align-items: center;
     justify-content: center;
 }
-.nav-menu{
-    color:#fdbcb4;
+.nav-item, .nav-link {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
 }
 .cuadrado{
     width:100%;
@@ -54,6 +56,6 @@ h4,h6{
 
 .icons{
     color: #938f9b;
-    width: 8%;
+    width: 3%;
     height: 10%;
 }
