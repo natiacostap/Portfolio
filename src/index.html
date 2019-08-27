@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <title>Natalia Acosta</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <title>Natalia Acosta</title>
 </head>
 <body>
   <header> 
@@ -15,46 +16,67 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav col-md-12">
-              <a class="nav-item nav-link col-md-4" href="#About">About</a> 
-              <a class="nav-item nav-link col-md-4" href="#Projects">Projects</a>
-              <a class="nav-item nav-link col-md-4" href="#Contact">Contact</a>
+              <a class="nav-item nav-link col-md-4 " href="#About">About</a> 
+              <a class="nav-item nav-link col-md-4 " href="#Projects">Projects</a>
+              <a class="nav-item nav-link col-md-4 " href="#Contact">Contact</a>
             </div>
           </div>
         </nav>
   </header>
   <main>
-      <div class="cuadrado">
-        <img class="photo-back" src=""> </img>
+
+    <seccion id="page1">
+      <div data-aos="fade-right">
+        <img id="hand-right" src="../img/mano-der.png"> </img> 
+        <span class ="hello-world"id="tag-izq"><</span>
+        <span class ="hello-world"id="hello">Hello</span>
       </div>
-  
+      <div data-aos="fade-left">
+        <img id="hand-left" src="../img/mano-izq.png"> </img>
+        <span class ="hello-world"id="world">World</span>
+        <span class ="hello-world"id="tag-der">></span>
+      </div>
+    
+      <img class="photo-back" src="../img/fondo3.png"> </img>
+      <img class="photo-back" src="../img/fondo2.png"> </img>
+   
 
     <div class="container-profile flex-center">
       <img class="profile-photo" src="../img/monito.jpg" > </img>
-      <h4>Natalia Acosta</h3>
+      <h3 id="my-name">Natalia Acosta</h3>
       <h6>Front End Developer</h6>
-      <div class="skills-icons">
-        <img class="icons" src="../img/css(1).png"> </img>
-        <img class="icons" src="../img/css.png"> </img>
-        <img class="icons" src="../img/css(2).png"> </img>
-        <img class="icons" src="../img/css(3).png"> </img>
-        <img class="icons" src="../img/css(4).png"> </img>
+      <h6>Comunicadora Audiovisual</h6>
+      <div class="skills-icons flex-center">
+        <img class="icons zoom" src="../img/css(1).png"> </img>
+        <img class="icons zoom" src="../img/css.png"> </img>
+        <img class="icons zoom" src="../img/css(2).png"> </img>
+        <img class="icons zoom" src="../img/css(3).png"> </img>
+        <img class="icons zoom" src="../img/css(4).png"> </img>
       </div>
     </div>
+  </seccion>
 
-<div id="About" class="About ">
+<section id="page2">
+<div id="About" >
   <h2>About me</h2>
-  <p> Texto contar mi vida </p>
-</div>
+  <h4> Comenzando en el area de la tećnologia. Me gusta el poder que tiene la industria tecnológica para impactar, mejor e integrar nuestras vidas. La tecnología y las comunicaciones avanzan cada vez más rápido
+    y podemos sacar el mayor provecho de ello. La evolución es nuestra naturaleza.</h4>
 
-<div id="Projects" class="projects flex-center">
+</div>
+</section>
+<section id="page3">
+<div id="Projects" class="flex-center">
   <h2>Projects</h2>
   <p>Aqui los proyectos</p>
 </div>
+</seccion>
 
-<div id="Contact" class="contact">
+<section id="page4">
+<div id="Contact">
   <h2>Contact</h2>
  <p> Datos de contacto aqui</p>
 </div>
+</seccion>
 
 </main> 
 </body>
@@ -63,9 +85,12 @@
    <p>Copyrigth</p>
   </div>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/41d89d797e.js"></script>
+<script src="app.js"></script>
 
 </html>
