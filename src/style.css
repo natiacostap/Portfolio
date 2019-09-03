@@ -1,110 +1,176 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monda&display=swap');
-
-.about-p .contact-p{
-    color: #938f9b;
-    font-family: 'Oxygen', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+html{
+    scroll-behavior: smooth;
 }
-h2{
+
+h1{
     color:#fdbcb4;
-    font-family: 'Oxygen', sans-serif;
+    padding-bottom: 2%;
+    font-family: 'Monda', sans-serif;
+    font-size: 60px;
+    
 }
-h3,h6{
-    margin:2px;
-    color: #938f9b;
-    font-family: 'Oxygen', sans-serif;
+h4{
+    color:#fdbcb4;
+    font-family: 'Monda', sans-serif;
 }
 
-.profile-photo{
-    margin-top:75vh;
-    width:200px;
-    height:200px;
-    border-radius:160px;
-    border:2px solid #908b97;  
-}
-.container-profile{
-    display: flex;
-    flex-direction: column;
-    margin-top: -20%;
-}
-.flex-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.nav-item, .nav-link {
+
+/* SECCION: HOME - navbar*/
+.navbar-light .navbar-nav .nav-link{
     text-align: center;
+    font-family: 'Monda', sans-serif;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+} 
+.switch{
+    size: 50%;
     font-size: 16px;
-    z-index: 1;
 }
-.photo-back{
-    position: absolute;
-    margin-top:40vh;
-    z-index: -3;
-    width: 100%;
-    height: 50%;
-    opacity: 0.5;
-}
+
+/* SECCION: HOME - imagen*/
 #hand-right, #hand-left{
-    position: absolute;
-    z-index: 0;
-    margin-top:16vh;
-    width: 90%;
+    width: 33%;
+    position: absolute; 
 }
 #hand-right{
-    margin-left: 10%;
+    margin-top: 28vh;
 }
 #hand-left{
-    margin-right: 20%;
+    margin-left: 128vh;
+    margin-top:18vh;
 }
+
 .hello-world{
-    position: absolute;
-    z-index: 0;
     font-family: 'Monda', sans-serif;
-    color: #ffffff;
+    color: #fdbcb4;
+    font-size: 60px; 
+    position: absolute;
 }
 #tag-der{
-    margin-left: 66.5%;
-    font-size: 50px;  
-    margin-top: 53vh;
-    transform: rotate(-15deg) 
+    margin-left: 125vh;
+    margin-top: 32vh;
+    transform: rotate(-20deg) ;
 }
 #tag-izq{
-    margin-left: 33%;
-    font-size: 50px;  
-    margin-top: 62vh;
+    margin-left:61vh;
+    margin-top: 40vh;
     transform: rotate(-7deg)
 }
 #hello{
-    margin-left: 36%;
-    font-size: 60px;  
-    margin-top: 59vh;
+    margin-left: 68vh;
+    margin-top: 35vh;
     transform: rotate(-7deg)
 }
 #world{
-    margin-left: 53%;
-    font-size: 60px;  
-    margin-top: 54vh;
+    margin-left: 96vh; 
+    margin-top: 32vh;
     transform: rotate(-5deg)
 }
-
-.footer{
-    background-color: #fdbcb4;
-    color: #938f9b
+#im{
+    margin-left: 71vh; 
+    margin-top: 44vh;
+    transform: rotate(-7deg)
+}
+#natalia{
+    margin-left: 92vh; 
+    margin-top: 41vh;
+    transform: rotate(-7deg)
 }
 
+
+/* SECCION: ABOUT*/
+#page2{
+    position: absolute;
+    margin-top: 110vh;
+}
+.profile-photo {
+    width:300px;
+    height:300px;
+    border-radius:160px;
+    border:6px solid #666; 
+    margin-left: 10vh;
+   
+}
+#fe-ca{
+    color:#fdbcb4;
+    font-size: 30px;
+    font-family: 'Monda', sans-serif;
+    padding-bottom: 3%;
+}
 .skills-icons{
    flex-direction: row;
 }
-
 .icons{
     color: #938f9b;
-    width: 3%;
+    width: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+#sobremi{
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+#sobremi, #project-title, #contac-title{
+    font-family: 'Monda', sans-serif;
+    color: #fff;
+    text-shadow: -2px 2px 5px #dddddd; 
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+/*SECCION: PROPECTOS*/
+#page3{
+    position: absolute;
+    margin-top: 200vh;  
     
 }
-.zoom:hover {
-    transform: scale(1.5);
+
+.pinkcard{
+    width: 100px;
+    height: 450px;
+    background-color: #fdbcb4;
+    margin: 2%
 }
+.all-cards{
+    align-content: center;
+    justify-content: center
+}
+.logo-project{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 6%;
+}
+.icon-project{
+    width: 40%;
+}
+#project-title{
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    
+}
+/*SECCION: CONTACTO*/
+#page4{
+    position: absolute;
+    margin-top:20vh;
+}
+#contact-title{
+    margin-bottom: 10vh;
+}
+.all-contact{
+    margin-bottom: 30vh; 
+    margin-left: 45vh
+}
+.contact-icons{
+    width: 12%;
+    margin: 5%;
+}
+
+
 
