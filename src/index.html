@@ -10,7 +10,7 @@
 </head>
 <body>
   <header> 
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav id='navbar-es'class="navbar navbar-expand-lg navbar-light " >
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -18,26 +18,49 @@
             <div class="navbar-nav col-md-12">
               <a class="nav-item nav-link col-md-4 zoom" href="#About">Sobre mi</a> 
               <a class="nav-item nav-link col-md-4 zoom" href="#Projects">Proyectos</a>
-              <a class="nav-item nav-link col-md-4 zoom" href="#Contact">Contacto</a>
+              <a class="nav-item nav-link col-md-4 zoom" href="#Contacto">Contacto</a>
             </div>
-          </div>
-        
+          </div>      
         </nav>
+        <nav id='navbar-en'class="navbar navbar-expand-lg navbar-light " >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav col-md-12">
+                <a class="nav-item nav-link col-md-4 zoom "  href="#About">About me</a> 
+                <a class="nav-item nav-link col-md-4 zoom" href="#Projects">Projects</a>
+                <a class="nav-item nav-link col-md-4 zoom" href="#Contacto">Contact</a>
+              </div>
+            </div>      
+          </nav>
+
+          <label class="btn-switch"  >
+              <input type="checkbox" id='checkbox' onclick='check()'>
+              <span class="switch"></span>
+           </label>
+           <span class="language">EN</span> 
   </header>
   <main>
 
     <seccion id="page1">
-    
+      
         <div data-aos="fade-right">
         <img id="hand-right"src="../img/right(1).png"> </img> 
         <span class ="hello-world"id="tag-izq"><</span>
-        <span class ="hello-world"id="hello">Hello</span>
-        <span class ="hello-world"id="im">I'm</span>
-      </div>
+        <div id='home-right-es'>
+        <span class ="hello-world"id="hola">Hola</span>
+        <span class ="hello-world"id="soy">Soy</span>
+         </div>
+         <div id='home-right-en'>
+            <span class ="hello-world"id="hello">Hello</span>
+            <span class ="hello-world"id="im">I'm</span>
+        </div>
   
 
       <div data-aos="fade-left">
         <img id="hand-left" src="../img/left(1).png"> </img>
+        <span class ="hello-world"id="mundo">Mundo</span>
         <span class ="hello-world"id="world">World</span>
         <span class ="hello-world"id="natalia">Natalia</span>
         <span class ="hello-world"id="tag-der">></span> 
@@ -49,9 +72,10 @@
 
   <section id="page2" >
       
-    <div id="About" class='container col-md-12'>
+    <div class='container col-md-12'>
         <div data-aos="zoom-in">
         <h1 id='sobremi'>SOBRE MI</h1>
+        <h1 id='aboutme'>ABOUT ME</h1>
       <div class='row'> 
           <div class='col-md-4'>
           <img class="profile-photo"  src="../img/monito.jpg" > </img> 
@@ -77,8 +101,9 @@
 
 
   <section id="page3">
-     <div id="Projects" class='container col-md-12'> 
-        <h1 id='project-title'>PROYECTOS</h1>
+     <div  class='container col-md-12'> 
+        <h1 id='proyecto'>PROYECTOS</h1> 
+        <h1 id='project'>PROJECTS</h1>
         <div data-aos="zoom-in">
        <div class="row all-cards">
         <div class="pinkcard col-md-3 col-sm-12">
@@ -104,8 +129,9 @@
 
    <section id="page4">
       <div data-aos="zoom-in">
-     <div id='Contact' class='container col-md-12'> 
-     <h1 id='contac-title'>CONTACTO</h1>
+     <div class='container col-md-12'> 
+     <h1 id='contactame'>CONTACTAME</h1>
+     <h1 id='contact-me'>CONTACT ME</h1>
       <div class='all-contact'>
        <a href='https://github.com/natiacostap'+><img class='contact-icons' src='../img/css(3).png'></a>
        <a href='mailto:nati_aap@hotmail.com'><img class='contact-icons' src='../img/mail1.png'></a>

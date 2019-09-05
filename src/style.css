@@ -17,12 +17,22 @@ h4{
     color:#fdbcb4;
     font-family: 'Monda', sans-serif;
 }
+#home-es, #mundo, #navbar-es, #contactame, #sobremi, #proyecto{
+    display: block;
+}
+
+#home-right-en, #world, #navbar-en, #contact-me, #aboutme, #project{
+    display: none;
+}
 
 
 /* SECCION: HOME - navbar*/
 .navbar-light .navbar-nav .nav-link{
     text-align: center;
     font-family: 'Monda', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:#fdbcb4;
 }
 
 .zoom:hover {
@@ -62,17 +72,17 @@ h4{
     margin-top: 40vh;
     transform: rotate(-7deg)
 }
-#hello{
+#hello, #hola{
     margin-left: 68vh;
     margin-top: 35vh;
     transform: rotate(-7deg)
 }
-#world{
+#world, #mundo{
     margin-left: 96vh; 
     margin-top: 32vh;
     transform: rotate(-5deg)
 }
-#im{
+#im, #soy{
     margin-left: 71vh; 
     margin-top: 44vh;
     transform: rotate(-7deg)
@@ -112,14 +122,14 @@ h4{
     padding-top: 4%;
     padding-bottom: 4%;
 }
-#sobremi{
+#sobremi, #aboutme{
     margin-bottom: 10vh;
     margin-top: 5vh;
 }
-#sobremi, #project-title, #contac-title{
+#sobremi, #aboutme, #project, #proyecto, #contactame, #contact-me{
     font-family: 'Monda', sans-serif;
     color: #fff;
-    text-shadow: -2px 2px 5px #dddddd; 
+    text-shadow: 0px 0px 1vw #cecccb; 
     text-align: center;
     font-size: 70px;
     font-weight: 900;
@@ -128,7 +138,7 @@ h4{
 /*SECCION: PROPECTOS*/
 #page3{
     position: absolute;
-    margin-top: 200vh;  
+    margin-top: 220vh;  
     
 }
 
@@ -150,7 +160,7 @@ h4{
 .icon-project{
     width: 40%;
 }
-#project-title{
+#project #proyecto{
     margin-bottom: 5vh;
     margin-top: 5vh;
     
@@ -160,7 +170,7 @@ h4{
     position: absolute;
     margin-top:20vh;
 }
-#contact-title{
+#contactame #contact-me{
     margin-bottom: 10vh;
 }
 .all-contact{
@@ -172,5 +182,57 @@ h4{
     margin: 5%;
 }
 
+
+/*BOTON SWITCH LANGUAGE*/
+.btn-switch{
+    position: relative;
+    display: inline-block;
+    width: 3.6rem;
+    height: 2rem;
+   
+}
+    
+.btn-switch input {   
+    opacity: 0;
+    width: 0;
+    height: 0;  
+   
+}
+    
+.switch{ 
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;   
+    border-radius: 20px;  
+}
+    
+.switch:before {
+    position: absolute;
+    content: "";
+    height: 1.6rem;
+    width: 1.6rem;
+    left: 0.2rem;
+    bottom: 0.2rem;
+    background-color: white;
+    transition: .4s;
+    border-radius: 20px; 
+}
+    
+input:checked + .switch { 
+    background-color: #fdbcb4;
+    border-radius: 20px; 
+    
+    
+}
+    
+input:checked + .switch:before {
+    transform: translateX(1.6rem);
+    border-radius: 20px; 
+}
 
 
