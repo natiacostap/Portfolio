@@ -26,6 +26,7 @@ h4{
 }
 
 
+
 /* SECCION: HOME - navbar*/
 .navbar-light .navbar-nav .nav-link{
     text-align: center;
@@ -50,6 +51,7 @@ h4{
 }
 #hand-right{
     margin-top: 28vh;
+
 }
 #hand-left{
     margin-left: 128vh;
@@ -189,7 +191,7 @@ h4{
     display: inline-block;
     width: 3.6rem;
     height: 2rem;
-   
+    
 }
     
 .btn-switch input {   
@@ -234,5 +236,15 @@ input:checked + .switch:before {
     transform: translateX(1.6rem);
     border-radius: 20px; 
 }
+#btn-en, #btn-es{
+    font-family: 'Monda', sans-serif;
+    color: #938f9b;
+    margin: 2px;
 
-
+}
+#switch-language{
+    position: fixed;
+    display: flex;
+    margin-left: 170vh;
+    z-index: 3;
+}
