@@ -15,23 +15,26 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav col-md-12">
-              <a class="nav-item nav-link col-md-4 zoom" href="#page2">Sobre mi</a> 
-              <a class="nav-item nav-link col-md-4 zoom" href="#page3">Proyectos</a>
-              <a class="nav-item nav-link col-md-4 zoom" href="#page4">Contacto</a>
+            <div class="navbar-nav col-md-12 fixed-top">
+              <a class="nav-item nav-link col-md-3 zoom" href="#page2">Sobre mi</a> 
+              <a class="nav-item nav-link col-md-3 zoom" href="#page3">Proyectos</a>
+              <a class="nav-item nav-link col-md-3 zoom" href="#page4">Contacto</a>
             </div>
           </div>      
         </nav>
+    
         <nav id='navbar-en'class="navbar navbar-expand-lg navbar-light " >
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav col-md-12">
-                <a class="nav-item nav-link col-md-4 zoom" href="#page2">About me</a> 
-                <a class="nav-item nav-link col-md-4 zoom" href="#page3">Projects</a>
-                <a class="nav-item nav-link col-md-4 zoom" href="#page4">Contact</a>
+              <div id='navbar-stick'> 
+              <div class="navbar-nav col-md-12 fixed-top">
+                <a class="nav-item nav-link col-md-3 zoom" href="#page2">About me</a> 
+                <a class="nav-item nav-link col-md-3 zoom" href="#page3">Projects</a>
+                <a class="nav-item nav-link col-md-3 zoom" href="#page4">Contact</a>
               </div>
+            </div>
             </div>      
           </nav>
           <div id='switch-language'> 
@@ -67,16 +70,17 @@
         <span class ="hello-world"id="tag-der">></span> 
       </div>
 
-      <button>Up</button>
-      <button>Down</button>
+     <!-- <div id='btns-up-down'> 
+      <a><img id='up' class='up-down'src='../img/arrow(21).png'></a>
+      <a><img id='down' class='up-down'src='../img/arrow(21).png'></a>
+      <!-- <button id='down' class='up-down'>^</button> 
+    </div> -->
     </seccion>
   
 
   <section id="page2" >  
-    <div class='container col-md-12'>
+    <div class='container'>
         <div data-aos="zoom-in">
-        <h1 id='sobremi'>SOBRE MI</h1>
-        <h1 id='aboutme'>ABOUT ME</h1>
       <div class='row'> 
           <div class='col-md-4'>
           <img class="profile-photo"  src="../img/monito.jpg" > </img> 
@@ -96,15 +100,15 @@
            </div>
        </div>
      </div>
-     </div>
+    
+    </div>
    </section>
 
 
 
   <section id="page3">
-     <div  class='container col-md-12'> 
-        <h1 id='proyecto'>PROYECTOS</h1> 
-        <h1 id='project'>PROJECTS</h1>
+     <div  class='container'> 
+        <div class='col-md-12'>
         <div data-aos="zoom-in">
        <div class="row all-cards">
         <div class="pinkcard col-md-3 col-sm-12">
@@ -123,23 +127,24 @@
         </div>  
       </div>
         </div>
-      </div>  
-   </seccion>
+      </div> 
+      </div> 
+   </section>
 
 
    <section id="page4">
-      <div data-aos="zoom-in">
-     <div class='container col-md-12'> 
-     <h1 id='contactame'>CONTACTAME</h1>
-     <h1 id='contact-me'>CONTACT ME</h1>
+     <div class='container'>
+        <div class=' col-md-12'>  
+            <div data-aos="zoom-in">
       <div class='all-contact'>
        <a href='https://github.com/natiacostap'+><img class='contact-icons' src='../img/css(3).png'></a>
        <a href='mailto:nati_aap@hotmail.com'><img class='contact-icons' src='../img/mail1.png'></a>
        <a href='http://linkedin.com/natalia-acosta-parra'><img class='contact-icons'src='../img/link.png'></a>
       </div>
     </div>
+    </div>
   </div>
-  </seccion>
+  </section>
 
 </main> 
 </body>

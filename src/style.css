@@ -25,9 +25,9 @@ h4{
     display: none;
 }
 
-
-
 /* SECCION: HOME - navbar*/
+
+
 .navbar-light .navbar-nav .nav-link{
     text-align: center;
     font-family: 'Monda', sans-serif;
@@ -79,10 +79,15 @@ h4{
     margin-top: 35vh;
     transform: rotate(-7deg)
 }
-#world, #mundo{
-    margin-left: 96vh; 
+#world{
+    margin-left: 95vh; 
     margin-top: 32vh;
-    transform: rotate(-5deg)
+    transform: rotate(-6deg)
+}
+#mundo{
+    margin-left: 92vh; 
+    margin-top: 32vh;
+    transform: rotate(-7deg)
 }
 #im, #soy{
     margin-left: 71vh; 
@@ -92,7 +97,7 @@ h4{
 #natalia{
     margin-left: 92vh; 
     margin-top: 41vh;
-    transform: rotate(-7deg)
+    transform: rotate(-8deg)
 }
 
 
@@ -130,8 +135,8 @@ h4{
 }
 #sobremi, #aboutme, #project, #proyecto, #contactame, #contact-me{
     font-family: 'Monda', sans-serif;
-    color: #fff;
-    text-shadow: 0px 0px 1vw #b6b4b4; 
+    color: transparent;
+    text-shadow: 0px 0px 1vw #e4dede; 
     text-align: center;
     font-size: 70px;
     font-weight: 900;
@@ -170,7 +175,7 @@ h4{
 /*SECCION: CONTACTO*/
 #page4{
     position: absolute;
-    margin-top:20vh;
+    margin-top:340vh;
 }
 #contactame #contact-me{
     margin-bottom: 10vh;
@@ -190,15 +195,13 @@ h4{
     position: relative;
     display: inline-block;
     width: 3.6rem;
-    height: 2rem;
-    
+    height: 2rem; 
 }
     
 .btn-switch input {   
     opacity: 0;
     width: 0;
     height: 0;  
-   
 }
     
 .switch{ 
@@ -227,9 +230,7 @@ h4{
     
 input:checked + .switch { 
     background-color: #fdbcb4;
-    border-radius: 20px; 
-    
-    
+    border-radius: 20px;  
 }
     
 input:checked + .switch:before {
@@ -240,11 +241,33 @@ input:checked + .switch:before {
     font-family: 'Monda', sans-serif;
     color: #938f9b;
     margin: 2px;
-
 }
 #switch-language{
     position: fixed;
     display: flex;
-    margin-left: 170vh;
+    margin-left: 150vh;
     z-index: 3;
+    margin-top: -1vh
+}
+
+/*BOTONES UP Y DOWN*/
+
+.up-down{
+    width: 7vh;
+    position: absolute;
+    color: #fff;
+    font-family: 'Monda', sans-serif;
+    border-radius: 50%;
+}
+#down{
+    transform: rotate(180deg);
+    margin-left: 10vh;
+    margin-top: -1vh
+}
+
+#btns-up-down{
+    position: fixed;
+    margin-top:75vh;
+    margin-left:47vw;
+
 }
