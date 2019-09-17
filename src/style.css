@@ -2,123 +2,147 @@
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monda&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+
+/*GENERALES*/
 html{
     scroll-behavior: smooth;
 }
 
 h1{
-    color:#fdbcb4;
+    color:#fff;
     padding-bottom: 2%;
     font-family: 'Monda', sans-serif;
     font-size: 60px;
     
 }
 h4{
-    color:#fdbcb4;
+    color:#fff;
     font-family: 'Monda', sans-serif;
 }
-#home-es, #mundo, #navbar-es, #contactame, #sobremi, #proyecto{
+#hola, #soy, #mundo, #p2-es, #p3-es, #p4-es, #proyectos, #contacto, #desarrollado{
     display: block;
 }
 
-#home-right-en, #world, #navbar-en, #contact-me, #aboutme, #project{
+#hello, #im, #world, #p2-en, #p3-en, #p4-en, #projects, #contact, #develop{
     display: none;
 }
 
-/* SECCION: HOME - navbar*/
+#page2, #page3, #page4{
+    position: relative;
+    overflow: hidden;
+}
 
 
+/* NAVBAR*/
 .navbar-light .navbar-nav .nav-link{
     text-align: center;
     font-family: 'Monda', sans-serif;
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color:#fdbcb4;
+    background-color: #fff;
+    opacity: 0.7;
 }
 
 .zoom:hover {
     transform: scale(1.2);
 } 
-.switch{
-    size: 50%;
-    font-size: 16px;
-}
 
-/* SECCION: HOME - imagen*/
+
+
+
+
+
+/* SECCION: HOME - PAGE1*/
+#background{
+    width: 100%;
+    height: 70%;
+    z-index: 1;
+    margin-top: 12vh;
+    overflow: hidden;
+}
 #hand-right, #hand-left{
-    width: 33%;
-    position: absolute; 
+    width: 32%;
+    position: absolute;
+    z-index: 2;
+
+    
 }
 #hand-right{
-    margin-top: 28vh;
+  padding-top: 20vh;
 
 }
 #hand-left{
-    margin-left: 128vh;
-    margin-top:18vh;
+    padding-top: 10vh;
+    margin-left: 70vw;
+    overflow: hidden;
 }
 
 .hello-world{
     font-family: 'Monda', sans-serif;
-    color: #fdbcb4;
+    color: #fff;
     font-size: 60px; 
     position: absolute;
+    text-shadow: 10px 10px 20px  #c4c4bd;
+   
 }
 #tag-der{
-    margin-left: 125vh;
-    margin-top: 32vh;
-    transform: rotate(-20deg) ;
+    margin-left: 68vw;
+    padding-top: 23vh;
 }
 #tag-izq{
-    margin-left:61vh;
-    margin-top: 40vh;
-    transform: rotate(-7deg)
+    padding-top: 32vh;
+    margin-left: 32vw;
 }
 #hello, #hola{
-    margin-left: 68vh;
-    margin-top: 35vh;
+    padding-top: 25vh;
+    margin-left: 36vw;
     transform: rotate(-7deg)
 }
-#world{
-    margin-left: 95vh; 
-    margin-top: 32vh;
+#mundo, #world{
+    padding-top:22vh;
+    margin-left: 50vw;
     transform: rotate(-6deg)
 }
-#mundo{
-    margin-left: 92vh; 
-    margin-top: 32vh;
-    transform: rotate(-7deg)
-}
+
 #im, #soy{
-    margin-left: 71vh; 
-    margin-top: 44vh;
+    padding-top: 35vh;
+    margin-left: 38vw;
     transform: rotate(-7deg)
 }
 #natalia{
-    margin-left: 92vh; 
-    margin-top: 41vh;
-    transform: rotate(-8deg)
+    padding-top: 32vh;
+    margin-left: 50vw;
+    transform: rotate(-7deg)
 }
-
 
 /* SECCION: ABOUT*/
-#page2{
-    position: absolute;
-    margin-top: 110vh;
+.rectangle-2{
+    width: 100%;
+    height: 60%;
+    z-index: 1;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    background-color: rgb(231, 52, 156);
+    border-bottom-right-radius: 20rem;
+    border-top-right-radius: 20rem;
 }
+
 .profile-photo {
     width:300px;
     height:300px;
     border-radius:160px;
     border:6px solid #666; 
-    margin-left: 10vh;
-   
+    margin-top: 5vh;   
+}
+#text-about{
+    padding-top: 6vh;
+    padding-left: 5vw;
+    
 }
 #fe-ca{
-    color:#fdbcb4;
+    color: rgb(129, 127, 127);
     font-size: 30px;
     font-family: 'Monda', sans-serif;
     padding-bottom: 3%;
+    
 }
 .skills-icons{
    flex-direction: row;
@@ -129,64 +153,66 @@ h4{
     padding-top: 4%;
     padding-bottom: 4%;
 }
-#sobremi, #aboutme{
-    margin-bottom: 10vh;
-    margin-top: 5vh;
+
+/*SECCION: PROYECTOS*/
+.rectangle{
+    width: 50%;
+    height: 80%;
+    background-color: rgb(156, 23, 233);
+    margin-top: 20vh;
+    margin-left: -5vh;
 }
-#sobremi, #aboutme, #project, #proyecto, #contactame, #contact-me{
-    font-family: 'Monda', sans-serif;
-    color: transparent;
-    text-shadow: 0px 0px 1vw #e4dede; 
-    text-align: center;
-    font-size: 70px;
-    font-weight: 900;
+.title-projects{
+    padding-top: 35vh;
+    text-shadow: 10px 10px 20px  #c4c4bd;
+    ;
+
 }
 
-/*SECCION: PROPECTOS*/
-#page3{
-    position: absolute;
-    margin-top: 220vh;  
-    
-}
 
-.pinkcard{
-    width: 100px;
-    height: 450px;
-    background-color: #fdbcb4;
-    margin: 2%
-}
-.all-cards{
-    align-content: center;
-    justify-content: center
-}
-.logo-project{
-    width: 80%;
-    margin-top: 10%;
-    margin-left: 6%;
-}
-.icon-project{
-    width: 40%;
-}
-#project #proyecto{
-    margin-bottom: 5vh;
-    margin-top: 5vh;
-    
-}
+
 /*SECCION: CONTACTO*/
-#page4{
-    position: absolute;
-    margin-top:340vh;
-}
-#contactame #contact-me{
-    margin-bottom: 10vh;
-}
 .all-contact{
-    margin-bottom: 30vh; 
-    margin-left: 45vh
+   margin-bottom: 100vh; 
+   margin-top: 50vh;
+   margin-left: 10vh;
+ 
+  
 }
 .contact-icons{
-    width: 12%;
-    margin: 5%;
+    width: 20%;
+    margin: 3%;
+   
+}
+.rectangle-3{
+    margin-top: 20vh;
+    width: 370px;
+    height: 535px;
+    background-color: rgb(63, 235, 77);
+}
+.title-contact{
+    padding-top:35vh;
+    text-shadow: 10px 10px 20px  #c4c4bd;
+    ;
+
+}
+
+/*FOOTER*/
+#footer{
+    padding-bottom: 2vh;
+   
+    
+}
+
+.text-footer{
+    color: #666;
+    font-size: 14px;
+    font-family: 'Monda', sans-serif;
+    text-align: center;
+    padding-top: 2vh;
+    
+  
+
 }
 
 
@@ -229,7 +255,7 @@ h4{
 }
     
 input:checked + .switch { 
-    background-color: #fdbcb4;
+    background-color: rgb(58, 188, 240);
     border-radius: 20px;  
 }
     
@@ -240,34 +266,89 @@ input:checked + .switch:before {
 #btn-en, #btn-es{
     font-family: 'Monda', sans-serif;
     color: #938f9b;
-    margin: 2px;
+    margin: 5px;
 }
+
 #switch-language{
     position: fixed;
     display: flex;
-    margin-left: 150vh;
-    z-index: 3;
-    margin-top: -1vh
+    margin-left: 165vh;
+    margin-top: 8vh;
 }
 
-/*BOTONES UP Y DOWN*/
+.floating-in{
+	animation-name: floating;
+	-webkit-animation-name: floating;
 
-.up-down{
-    width: 7vh;
-    position: absolute;
-    color: #fff;
-    font-family: 'Monda', sans-serif;
-    border-radius: 50%;
-}
-#down{
-    transform: rotate(180deg);
-    margin-left: 10vh;
-    margin-top: -1vh
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 }
 
-#btns-up-down{
-    position: fixed;
-    margin-top:75vh;
-    margin-left:47vw;
-
+@keyframes floating {
+	0% {
+		transform: translateX(0%);	
+	}
+	50% {
+		transform: translateX(5%);	
+	}	
+	100% {
+		transform: translateX(0%);
+	}			
 }
+
+@-webkit-keyframes floating{
+	0% {
+		-webkit-transform: translateX(0%);	
+	}
+	50% {
+		-webkit-transform: translateX(5%);	
+	}	
+	100% {
+		-webkit-transform: translateX(0%);
+	}			
+}
+
+
+/* .pulse{
+	animation-name: pulse;
+	-webkit-animation-name: pulse;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;	
+	}			
+} */
