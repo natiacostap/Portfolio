@@ -217,11 +217,14 @@ h4 {
         padding-top: 6vh;
         padding-left: 5vw;
     }
-    #fe-ca {
+    #fe-ca, #fe-ca-en {
         font-size: 18px;
     }
     #aboutme{
         font-size: 18px;
+    }
+    #aboutme-en{
+        font-size: 20px;
     }
     .icons {
         width: 12%; 
