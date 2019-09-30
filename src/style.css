@@ -166,11 +166,16 @@ h4 {
 }
 
 .profile-photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 160px;
+    /* width: 400px;
+    height: 320px;
+    border-radius: 150px;
     border: 6px solid #666;
+    margin-top: 5vh; */
+    width:320px;
+    height:320px;
+    border-radius:160px;
     margin-top: 5vh;
+    overflow: hidden;
 }
 
 #text-about {
@@ -196,6 +201,9 @@ h4 {
     width: 8%;
     padding-top: 4%;
     padding-bottom: 4%;
+}
+#aboutme-en{
+    font-size: 22px;
 }
 @media (max-width: 767px) {
     .rectangle-2 {
@@ -224,7 +232,7 @@ h4 {
         font-size: 18px;
     }
     #aboutme-en{
-        font-size: 20px;
+        font-size: 18px;
     }
     .icons {
         width: 12%; 
@@ -236,15 +244,13 @@ h4 {
 
 
 
-
-
 /*SECCION: PROYECTOS*/
 .rectangle {
     width: 50%;
-    height: 90%;
     background-color: rgb(156, 23, 233);
     margin-top: 20vh;
     margin-left: -5vh;
+    padding-bottom: 25%;
 }
 
 .title-projects {
@@ -252,16 +258,34 @@ h4 {
     text-shadow: 10px 10px 20px #c4c4bd;
 }
 .projects{
-  margin-left: 50vw;
-  width: 30%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   margin-bottom: 5vh;
-}
-#pro1{
-    margin-top: -80vh;
-}
 
+}
+.all-projects{
+    margin-top: 28vh;
+    margin-left: 2vw;
+}
+.project{
+ width: 150%;
+}
+.icons-projects{
+    z-index: 3; 
+}
+.btn-project-l, .btn-project-r{
+    width: 15%;
+    height: 15%;
+}
+.btn-project-r{
+    margin-left: 33vw;
+    margin-top: -11vh;
+}
+.btn-project-l{
+    margin-left: -5vw;
+    margin-top: -11vh;
+}
 
 @media (max-width: 767px) {
     .rectangle {
@@ -277,14 +301,11 @@ h4 {
     }
     .projects{
         margin-left: 8vw;
-        width: 80%;
-      }
-      #pro1{
-          margin-top: 10vh;
-      }
-      #pro4{
-          margin-bottom: 20vh;
-      }
+    }
+     
+    #pro4{
+        margin-bottom: 20vh;
+    }
 }
 
 
@@ -550,3 +571,114 @@ input:checked+.switch:before {
         -webkit-transform: scaleY(1);
     }
 }
+
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}	
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	50%{
+		-webkit-transform: translateX(8%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%);
+	}
+	80%{
+		-webkit-transform: translateX(4%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%);
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(150%);
+	}
+	50%{
+		transform: translateX(-8%);
+	}
+	65%{
+		transform: translateX(4%);
+	}
+	80%{
+		transform: translateX(-4%);
+	}
+	95%{
+		transform: translateX(2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}
+	50%{
+		-webkit-transform: translateX(-8%);
+	}
+	65%{
+		-webkit-transform: translateX(4%);
+	}
+	80%{
+		-webkit-transform: translateX(-4%);
+	}
+	95%{
+		-webkit-transform: translateX(2%);
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
