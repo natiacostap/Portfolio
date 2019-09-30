@@ -129,3 +129,10 @@ let color2 = "rgb("+r2+","+g2+","+b2+")";
 setInterval(updateGradient,10);
 
 
+function check(){
+  if(checkbox.checked){
+    english();
+  }else{
+    spanish();
+  }
+}
