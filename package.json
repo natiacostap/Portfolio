@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "professional portolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natiacostap/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Natalia Acosta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natiacostap/Portfolio/issues"
+  },
+  "homepage": "https://github.com/natiacostap/Portfolio#readme",
+  "dependencies": {
+    "gh-pages": "^2.1.0"
+  }
+}
