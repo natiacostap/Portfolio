@@ -63,10 +63,9 @@ h4 {
     background-color: #fff;
     opacity: 0.7;
 }
-
 @media (max-width: 767px) {
-    .navbar-light .navbar-nav .nav-link {
-        text-align: left;
+    .navbar .navbar-expand-lg .navbar-light >.navbar-toggler > .navbar-collapse .collapse .show > .navbar-nav .col-md-12 .fixed-top{
+        top:20%;
     }
 }
 
@@ -204,7 +203,7 @@ h4 {
     z-index: 1;
     margin-top: 23vh;
     margin-bottom: 20vh;
-    background-color: rgb(231, 52, 61);
+    background-image: linear-gradient(to right top, #e6ff42, #e8d019, #e0a300, #cf7809, #b74e15);
     border-bottom-right-radius: 20rem;
     border-top-right-radius: 20rem;
 }
@@ -233,7 +232,7 @@ h4 {
 
 #fe-ca,
 #fe-ca-en {
-    color: #c4c4bd;
+    color: #666;
     font-size: 30px;
     font-family: 'Monda', sans-serif;
     padding-bottom: 3%;
@@ -314,7 +313,7 @@ h4 {
 
 .rectangle {
     width: 50%;
-    background-color: rgb(156, 23, 233);
+    background-image: linear-gradient(to right top, #ae1873, #b4118d, #b318aa, #aa29cb, #923eee);
     margin-top: 20vh;
     margin-left: -5vh;
     padding-bottom: 25%;
@@ -446,8 +445,7 @@ h4 {
 
 .rectangle-3 {
     margin-top: 20vh;
-
-    background-color: rgb(63, 235, 77);
+    background-image: linear-gradient(to right top, #83e743, #56db66, #29ce80, #00be91, #12ae99);
 }
 
 .title-contact {
