@@ -75,47 +75,48 @@
     <section id="page3">
       <div class='container'>
         <div class='col-md-12'>
-          <div data-aos="fade-down">
+          <!-- <div data-aos="fade-down"> -->
             <div class= 'row'>
             <div class='col-md-5 rectangle'>
               <h1 id='proyectos' class='title-projects'>PROYECTOS <<</h1> <h1 id='projects' class='title-projects'>
                   PROJECTS <<</h1> 
                 </div> 
+          
                 <div class='offset-md-2 col-md-5 all-projects '>
 
                    <div class='projects'> 
-                    <img id='pro1' class='project' src='./img/title.png'/>
-                    <div class='row icons-projects'> 
-                      <img class='btn-project-l slideRight' src='./img/click.png'/>
-                      <img class='btn-project-r slideLeft' src='./img/css(3).png'/>
+                    <button id='proj1'class='info-proj'> <img class='project' src='./img/title.png'/> </button>
+                    <div id='overlay1' onclick='off()' class='row icons-projects overlay1'> 
+                      <a href='https://github.com/natiacostap/SCL009-tic-tac-toe'><img class='btn-project-l slideRight' src='./img/click.png'></a>
+                      <a href='https://expo.io/@natiacostap/TicTacToe'><img class='btn-project-r slideLeft' src='./img/css(3).png'></a>
                     </div>
                    </div>
                    <div class='projects'>
-                    <img id='pro2' class='project' src='./img/letrapokemon.png'/>
-                    <div class='row icons-projects'> 
-                        <img class='btn-project-l slideRight' src='./img/click.png'/>
-                        <img class='btn-project-r slideLeft' src='./img/css(3).png'/>
+                    <button id='proj2'class='info-proj'  href='#overlay2'> <img class='project' src='./img/letrapokemon.png'/> </button>
+                    <div id='overlay2' onclick='off()'class='row icons-projects'> 
+                      <a href='https://github.com/natiacostap/SCL008-data-lovers'><img class='btn-project-l slideRight' src='./img/click.png'></a>
+                      <a href='https://natiacostap.github.io/SCL009-data-lovers/src/index.html'><img class='btn-project-r slideLeft' src='./img/css(3).png'></a>
                       </div>
                    </div>
                    <div class='projects'>
-                    <img id='pro3' class='project' src='./img/logo-duchenne.png'/> 
-                    <div class='row icons-projects'> 
-                        <img class='btn-project-l slideRight' src='./img/click.png'/>
-                        <img class='btn-project-r slideLeft' src='./img/css(3).png'/>
+                    <button id='proj3' class='info-proj' > <img class='project' src='./img/logo-duchenne.png'/> </button>
+                    <div id='overlay3' onclick='off()' class='row icons-projects'> 
+                      <a href='https://github.com/natiacostap/duchenne-react'><img class='btn-project-l slideRight' src='./img/click.png'></a>
+                      <a href='https://mariia1304.github.io/duchenne-react/'><img class='btn-project-r slideLeft' src='./img/css(3).png'></a>
                       </div>
                    </div>
                    <div class='projects'>
-                    <img id='pro4' class='project' src='./img/md-links-logo(1).png'/>
-                    <div class='row icons-projects'> 
-                        <img class='btn-project-l slideRight' src='./img/click.png'/>
-                        <img class='btn-project-r slideLeft' src='./img/css(3).png'/>
+                    <button id='proj4' class='info-proj'> <img class='project' src='./img/md-links-logo(1).png'/> </button>
+                    <div id='overlay4' onclick='off()' class='row icons-projects'> 
+                      <a href='https://github.com/natiacostap/SCL009-md-links'><img class='btn-project-l slideRight' src='./img/click.png'></a>
+                      <a href='https://www.npmjs.com/package/md-links-naap'><img class='btn-project-r slideLeft' src='./img/css(3).png'></a>
                       </div>
                    </div>
 
-            </div>
+            <!-- </div> -->
 
-          </div>
-        </div>
+          <!-- </div> -->
+        <!-- </div> -->
         </div>
       </div>
     </section>
@@ -146,8 +147,10 @@
                 </div>
               </div>
               <div class='col-md-2'>
-                <img class="profile-photo" src="./img/pp.jpeg"> </img>
+                <div class="profile-photo"> 
+                <img class="my-photo" src="./img/pp.jpeg"> </img>
               </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -160,18 +163,20 @@
         <div class='container'>
           <div class='row'>
             <div class='all-contact col-md-6'>
-              <a href='https://github.com/natiacostap' +><img class='contact-icons' src='./img/css(3).png'></a>
+              <a href='https://github.com/natiacostap'><img class='contact-icons' src='./img/css(3).png'></a>
               <a href='mailto:nati_aap@hotmail.com'><img class='contact-icons' src='./img/mail1.png'></a>
               <a href='http://linkedin.com/natiacostap'><img class='contact-icons' src='./img/link.png'></a>
             </div>
 
             <div class='col-md-5 rectangle-3'>
               <h1 id='contacto' class='title-contact'>CONTACTO << </h1> <h1 id='contact' class='title-contact'>CONTACT
-                  << </h1> </div> </div> </div> </div> </section> </main> <footer>
+                  << </h1> </div> </div> </div> </div> </section> </main> 
+                  
+                  <footer>
                     <a href='#page1'><img id='btn-up' src='./img/arrow(2).png'></img> </a>
                     <div id='footer'>
-                      <p id='desarrollado' class='text-footer'>Desarrollado por Natalia Acosta</p>
-                      <p id='develop' class='text-footer'>Develop by Natalia Acosta</p>
+                      <p id='desarrollado' class='text-footer'>Portafolio Natalia Acosta</p>
+                      <p id='develop' class='text-footer'>Portolfio Natalia Acosta</p>
                     </div>
                     </footer>
 

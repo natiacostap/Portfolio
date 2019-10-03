@@ -53,13 +53,12 @@ document.getElementById('p4-en').style.display='none';
 }
 
 let checkbox = document.getElementById('checkbox');
-console.log('checkbox:',checkbox)
 
 checkbox.addEventListener("change", check, false);
-console.log('checkbox:',checkbox)
 
 function check(){
   if(checkbox.checked){
+    
     english();
   }else{
     spanish();
@@ -128,11 +127,24 @@ let color2 = "rgb("+r2+","+g2+","+b2+")";
 
 setInterval(updateGradient,10);
 
+document.getElementById("proj1").addEventListener("click", function(){
+  document.getElementById("overlay1").style.display='block';
+});
 
-function check(){
-  if(checkbox.checked){
-    english();
-  }else{
-    spanish();
-  }
+document.getElementById("proj2").addEventListener("click", function(){
+  document.getElementById("overlay2").style.display='block';
+});
+document.getElementById("proj3").addEventListener("click", function(){
+  document.getElementById("overlay3").style.display='block';
+});
+document.getElementById("proj4").addEventListener("click", function(){
+  document.getElementById("overlay4").style.display='block';
+});
+
+
+function off() {
+  document.getElementById("overlay1").style.display = "none";
+  document.getElementById("overlay2").style.display = "none";
+  document.getElementById("overlay3").style.display = "none";
+  document.getElementById("overlay4").style.display = "none";
 }
